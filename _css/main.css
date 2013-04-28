@@ -20,8 +20,8 @@ html, body {
 
 
 a:link, a:visited {
-	color:#d8e6ff;
-	opacity:0.7;
+	color:#fff;
+	opacity:0.8;
 	outline:none;
 	text-decoration:none;
 }
@@ -87,17 +87,28 @@ a:hover {
 	width: 220px;
 }
 
+
 #header h2 {
 	position: relative;
 	display:inline;
 	float:left;
 	color:#fff;
-	font-size: 28px;
+	font-size: 26px;
+	line-height: 34px;
 	font-weight: 100;
 	letter-spacing: 1px;
 	padding-top:15px;
+	text-indent: 42px;
 	width: 30%;
 	cursor: pointer;
+
+	background: url('../assets/images/rm.jpeg') left 14px no-repeat transparent;
+	background-size: 34px;
+}
+
+#header h2.first {
+	background: url('../assets/images/ak.png') left 14px no-repeat transparent;
+	background-size: 34px;
 }
 
 #header:hover h2 {
@@ -176,15 +187,12 @@ a:hover {
 }
 
 
-
-
-
 /*MAIN STYLES------------------------------------------------------------*/
 
 #main {
 	width:100%;
 	min-height: 1200px;
-	padding: 80px 20px 0px 320px;
+	padding: 62px 20px 124px 320px;
 }
 
 #main .day {
@@ -206,9 +214,9 @@ a:hover {
 	border-top: 1px solid #444;
 }
 
-#main .day-monday h3 {
+/*#main .day-monday h3 {
 	display: none;
-}
+}*/
 
 #main .challenger {
 	display:inline;
@@ -335,7 +343,7 @@ a img {
 
 
 	#header h2 {
-		font-size: 22px;
+		font-size: 18px;
 	}
 
 
@@ -398,7 +406,7 @@ a img {
 		width: 140px;
 		font-size: 15px;
 		text-align: right;
-		top: 4px;
+		top: 0px;
 		right: 10px;
 		z-index: 101;
 	}
@@ -407,6 +415,17 @@ a img {
 		left: 10px;
 		right: auto;
 		text-align: left;
+	}
+
+	#header h2 span, #header h2.first span {
+		display: none;
+	}
+
+	#header h2.second {
+		text-align: left;
+		text-indent: 50px;
+		background-position: right 14px;
+/*		background-size: 34px;*/
 	}
 
 	#header p.enterData {
