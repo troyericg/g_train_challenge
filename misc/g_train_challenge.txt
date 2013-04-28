@@ -1,0 +1,38 @@
+
+G TRAIN CHALLENGE APP: 
+
+Purpose: To record and display the commute times for both Renda and Andrei, to see who's commute is quicker. 
+
+Tools: Firebase, Grunt, Tabletop.js (backup)
+Languages: HTML/CSS, JS
+
+
+---------------------------------------
+
+DETAILS: 
+
+- Side-by-side comparison of each commute.
+
+- The faster time would get highlighted. 
+
+- Logging in would open up a drop down menu for entering your trip details
+
+- Display emoji based on word input
+
+---------------------------------------
+
+LINKS:
+
+- Firebase: Tutorial
+https://www.firebase.com/tutorial/#gettingstarted
+
+- Firebase: Authenticating with Twitter
+https://www.firebase.com/docs/security/simple-login-twitter.html
+
+- Firebase: Security Rules 
+https://www.firebase.com/docs/security/security-rules.html
+
+
+
+
+.

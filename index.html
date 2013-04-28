@@ -1,0 +1,282 @@
+<!-- HTML5 ENCODING -->
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<title>G Train Challenge!</title>
+
+	<!-- "Before he swings the bat, a real slugger imagines an 
+	      arc inside his heart, arching directly to Heaven."
+
+	<!--        Made, with love, by Troy Eric Griggs.             -->
+	
+	
+	<!-- To force the mobile view state -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+
+	<link rel="stylesheet" type="text/css" href="_css/screenImport.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="_js/_externals/tabletop/tabletop.js" type="text/javascript" charset="utf-8"></script>
+	<script src="_js/_externals/mustache/mustache.js" type="text/javascript" charset="utf-8"></script>
+	<script src="_js/js.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header" title="Renda and Andrei's G-Train Challenge!">
+			<h1>Renda and Andrei's G-Train Challenge!</h1>
+			<h2 class="first">Andrei Kallaur</h2>
+			<h2>Renda Morton</h2>
+			<p class="enterData">
+				<input type='text' id='departInput' placeholder='Departure Time'>
+				<input type='text' id='arriveInput' placeholder='Arrival Time'>
+				<input type='text' id='emojiInput' placeholder='Emotional State'>
+				<input type='text' id='noteInput' placeholder='Additional Notes'>
+    		</p>
+		</div>
+		<div id="nav" class="group">
+			<ul class="info-day">
+				<li>Monday</li>
+				<li>Tuesday</li>
+				<li>Wednesday</li>
+				<li>Thursday</li>
+				<li>Friday</li>
+			</ul>
+			<p>The G-Train Challenge is an attempt to determine who has the better commute. Will it be <strong>Andrei Kallaur</strong>? or <strong>Renda Morton</strong>?</p>
+		</div>
+
+		<div id="main" class="group">
+			<div class="day day-monday group">
+				<h3>Monday</h3>
+				<div class="challenger group">
+					<ul class="group">
+						<li>
+							<p class="header-depart">Departure<span> Time</span></p>
+							<p class="info-depart"></p>
+						</li>
+						<li>
+							<p class="header-arrive">Arrival<span> Time</span></p>
+							<p class="info-arrive"></p>
+						</li>
+						<li>
+							<p class="header-emoji">Emotion<span>al State</span></p>
+							<p class="info-emoji"></p>
+						</li>
+						<li class="added-info">
+							<p class="header-notes">Notes</p>
+							<p class="info-notes"></p>
+						</li>
+					</ul>
+				</div>
+				<div class="challenger group">
+					<ul class="group">
+						<li>
+							<p class="header-depart">Departure<span> Time</span></p>
+							<p class="info-depart"></p>
+						</li>
+						<li>
+							<p class="header-arrive">Arrival<span> Time</span></p>
+							<p class="info-arrive"></p>
+						</li>
+						<li>
+							<p class="header-emoji">Emotion<span>al State</span></p>
+							<p class="info-emoji"></p>
+						</li>
+						<li class="added-info">
+							<p class="header-notes">Notes</p>
+							<p class="info-notes"></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+
+			<div class="day day-tuesday group">
+				<h3>Tuesday</h3>
+				<div class="challenger group">
+					<ul class="group">
+						<li>
+							<p class="header-depart">Departure<span> Time</span></p>
+							<p class="info-depart"></p>
+						</li>
+						<li>
+							<p class="header-arrive">Arrival<span> Time</span></p>
+							<p class="info-arrive"></p>
+						</li>
+						<li>
+							<p class="header-emoji">Emotion<span>al State</span></p>
+							<p class="info-emoji"></p>
+						</li>
+						<li class="added-info">
+							<p class="header-notes">Notes</p>
+							<p class="info-notes"></p>
+						</li>
+					</ul>
+				</div>
+				<div class="challenger group">
+					<ul class="group">
+						<li>
+							<p class="header-depart">Departure<span> Time</span></p>
+							<p class="info-depart"></p>
+						</li>
+						<li>
+							<p class="header-arrive">Arrival<span> Time</span></p>
+							<p class="info-arrive"></p>
+						</li>
+						<li>
+							<p class="header-emoji">Emotion<span>al State</span></p>
+							<p class="info-emoji"></p>
+						</li>
+						<li class="added-info">
+							<p class="header-notes">Notes</p>
+							<p class="info-notes"></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="day day-wednesday group">
+				<h3>Wednesday</h3>
+				<div class="challenger group">
+					<ul class="group">
+						<li>
+							<p class="header-depart">Departure<span> Time</span></p>
+							<p class="info-depart"></p>
+						</li>
+						<li>
+							<p class="header-arrive">Arrival<span> Time</span></p>
+							<p class="info-arrive"></p>
+						</li>
+						<li>
+							<p class="header-emoji">Emotion<span>al State</span></p>
+							<p class="info-emoji"></p>
+						</li>
+						<li class="added-info">
+							<p class="header-notes">Notes</p>
+							<p class="info-notes"></p>
+						</li>
+					</ul>
+				</div>
+				<div class="challenger group">
+					<ul class="group">
+						<li>
+							<p class="header-depart">Departure<span> Time</span></p>
+							<p class="info-depart"></p>
+						</li>
+						<li>
+							<p class="header-arrive">Arrival<span> Time</span></p>
+							<p class="info-arrive"></p>
+						</li>
+						<li>
+							<p class="header-emoji">Emotion<span>al State</span></p>
+							<p class="info-emoji"></p>
+						</li>
+						<li class="added-info">
+							<p class="header-notes">Notes</p>
+							<p class="info-notes"></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="day day-thursday group">
+				<h3>Thursday</h3>
+				<div class="challenger group">
+					<ul class="group">
+						<li>
+							<p class="header-depart">Departure<span> Time</span></p>
+							<p class="info-depart"></p>
+						</li>
+						<li>
+							<p class="header-arrive">Arrival<span> Time</span></p>
+							<p class="info-arrive"></p>
+						</li>
+						<li>
+							<p class="header-emoji">Emotion<span>al State</span></p>
+							<p class="info-emoji"></p>
+						</li>
+						<li class="added-info">
+							<p class="header-notes">Notes</p>
+							<p class="info-notes"></p>
+						</li>
+					</ul>
+				</div>
+				<div class="challenger group">
+					<ul class="group">
+						<li>
+							<p class="header-depart">Departure<span> Time</span></p>
+							<p class="info-depart"></p>
+						</li>
+						<li>
+							<p class="header-arrive">Arrival<span> Time</span></p>
+							<p class="info-arrive"></p>
+						</li>
+						<li>
+							<p class="header-emoji">Emotion<span>al State</span></p>
+							<p class="info-emoji"></p>
+						</li>
+						<li class="added-info">
+							<p class="header-notes">Notes</p>
+							<p class="info-notes"></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="day day-friday group">
+				<h3>Friday</h3>
+				<div class="challenger group">
+					<ul class="group">
+						<li>
+							<p class="header-depart">Departure<span> Time</span></p>
+							<p class="info-depart"></p>
+						</li>
+						<li>
+							<p class="header-arrive">Arrival<span> Time</span></p>
+							<p class="info-arrive"></p>
+						</li>
+						<li>
+							<p class="header-emoji">Emotion<span>al State</span></p>
+							<p class="info-emoji"></p>
+						</li>
+						<li class="added-info">
+							<p class="header-notes">Notes</p>
+							<p class="info-notes"></p>
+						</li>
+					</ul>
+				</div>
+				<div class="challenger group">
+					<ul class="group">
+						<li>
+							<p class="header-depart">Departure<span> Time</span></p>
+							<p class="info-depart"></p>
+						</li>
+						<li>
+							<p class="header-arrive">Arrival<span> Time</span></p>
+							<p class="info-arrive"></p>
+						</li>
+						<li>
+							<p class="header-emoji">Emotion<span>al State</span></p>
+							<p class="info-emoji"></p>
+						</li>
+						<li class="added-info">
+							<p class="header-notes">Notes</p>
+							<p class="info-notes"></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		
+		
+		<div id="footer" class="group">
+			<div id="footer-content">
+				<h4>made, with love, by <a href="http://troyericgriggs.com" target="_blank">troy eric griggs.</a></h4>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+
+</html>
